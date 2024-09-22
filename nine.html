@@ -1,0 +1,22 @@
+<input id="kaka">
+<button onclick="Add()">Add</button>
+<ul id="content">
+    <li>hello
+    <button onclick="deleted(event)">delete</button>
+</li>
+</ul>
+<script>
+    var ul = document.getElementById("content")
+    var input=document.getElementById("kaka")
+    function Add()
+    {
+        var listed = document.createElement("li")
+        listed.innerHTML=kaka.value+"<button onclick='deleted(event)'>delete</button>"
+        ul.append(listed)
+
+    }
+    function deleted(event)
+    {
+        event.target.parentElement.remove()
+    }
+</script>

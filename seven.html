@@ -1,0 +1,24 @@
+<style>
+    div{
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        transition: 6s;
+    }
+.width{
+    width: 900px;
+}
+</style>
+<div id="box"></div>
+<button onclick="colorchange()">chnage</button>
+<script>
+    var box = document.getElementById("box")
+
+    function colorchange()
+    {
+        box.setAttribute("class","width")
+
+        box.style.backgroundColor="red"
+    }
+   
+</script>

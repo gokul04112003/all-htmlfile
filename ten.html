@@ -1,0 +1,52 @@
+<button onclick="danger()">show</button>
+<div class="overlay"></div>
+<div class="popupbox">
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio veniam aliquid non illum cum facilis asperiores! Officiis voluptas inventore molestias eaque laboriosam corrupti odit aperiam, placeat ipsam quia commodi consectetur.</p>
+<button onclick="relase()">close</button>
+</div>
+
+
+
+<style>
+    .overlay{
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        opacity: 0.7;
+        z-index: 1;
+        display: none;
+        
+    }
+    .popupbox{
+        background-color: white;
+        color: black;
+        position:absolute;
+        z-index: 3;
+        width: 40%;
+        padding: 10px;
+        border-radius: 10px;
+        left: 30%;
+        display: none;
+    }
+</style>
+<script>
+    var overlay=document.querySelector(".overlay")
+    var popupbox=document.querySelector(".popupbox")
+    function danger()
+    {
+        popupbox.style.display="block";
+        overlay.style.display="block";
+
+    }
+    function relase()
+    {
+        popupbox.style.display="none";
+        overlay.style.display="none";
+
+    }
+
+
+</script>
